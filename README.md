@@ -70,10 +70,6 @@ AI마다 탭을 열고 같은 질문을 복사해서 붙여넣을 필요 없이,
 | `claude.ai`, `chatgpt.com`, `gemini.google.com` | 각 사이트에 질문 입력 |
 | `google.com` | Gemini의 구글 로그인 쿠키 확인 (`.google.com`에 저장되어 있음) |
 
-## 알려진 문제
-
-- **ChatGPT, Gemini 전송 실패** — 현재 Claude는 정상 전송되지만, ChatGPT와 Gemini는 전송에 실패하는 경우가 있어 원인을 확인하고 있습니다
-
 ## 전송이 안 될 때
 
 AI 사이트들이 화면 구조를 바꾸면 입력창이나 전송 버튼을 못 찾을 수 있습니다.
