@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>Multi AI Ask</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>Multi AI Ask</h1>
+    <span class="hint">Ctrl+Enter로 전송</span>
+  </header>
+
+  <textarea id="prompt" rows="6" placeholder="질문을 입력하세요" autofocus></textarea>
+
+  <div id="sites" class="sites"></div>
+  <ul id="login" class="login"></ul>
+
+  <div class="options">
+    <label><input type="checkbox" id="newChat"> 새 대화로 시작</label>
+    <label><input type="checkbox" id="tile"> 창 나란히 배치</label>
+  </div>
+
+  <button id="send" type="button">동시에 보내기</button>
+
+  <ul id="results" class="results"></ul>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

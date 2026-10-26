@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Multi AI Ask",
+  "version": "1.0.0",
+  "description": "질문 하나를 Claude, ChatGPT, Gemini에 동시에 보냅니다.",
+  "permissions": ["tabs", "scripting", "storage", "system.display", "cookies"],
+  "host_permissions": [
+    "https://claude.ai/*",
+    "https://chatgpt.com/*",
+    "https://chat.openai.com/*",
+    "https://gemini.google.com/*",
+    "https://google.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Multi AI Ask",
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": { "default": "Alt+Shift+A" },
+      "description": "Multi AI Ask 열기"
+    }
+  }
+}
